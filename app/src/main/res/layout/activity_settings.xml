@@ -7,51 +7,12 @@
     android:background="#0277BD"
     tools:context=".activity.SettingsActivity">
 
-    <ScrollView
-        android:layout_width="0dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <ImageView
-                android:id="@+id/imageView_vine"
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/asset_1" />
-
-            <ImageView
-                android:id="@+id/imageView_bear"
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/asset_2" />
-
-            <ImageView
-                android:id="@+id/imageView_vine2"
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/asset_3" />
-
-            <ImageView
-                android:id="@+id/imageView_3"
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/asset_4" />
-
-            <ImageView
-                android:id="@+id/imageView_4"
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/asset_5" />
-        </LinearLayout>
-    </ScrollView>
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

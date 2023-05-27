@@ -1,5 +1,6 @@
 package com.euphoriacode.bottleapp
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
@@ -10,7 +11,10 @@ import androidx.appcompat.app.AppCompatActivity
 
 const val URL_ABOUT = "www.google.com"
 
-var id = 0
+@SuppressLint("UseCompatLoadingForDrawables")
+
+var id = R.drawable.asset_1
+
 fun AppCompatActivity.replaceActivity(activity: AppCompatActivity) {
     val intent = Intent(this, activity::class.java)
     startActivity(intent)
@@ -20,7 +24,7 @@ fun AppCompatActivity.replaceActivity(activity: AppCompatActivity, url: String) 
     val intent = Intent(this, activity::class.java).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
     intent.putExtra("url", url)
     startActivity(intent)
-   // this.finish()
+    // this.finish()
 }
 
 fun getInternetStatus(context: Context): Boolean {
