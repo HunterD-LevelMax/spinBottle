@@ -30,8 +30,8 @@ class WebActivity : CustomActivity() {
                 showToast(getString(R.string.internet_status_message))
                 return true
             }
-            if (binding.webView.canGoBack()) {
-                binding.webView.goBack()
+            if (webView.canGoBack()) {
+                webView.goBack()
                 CookieManager.getInstance().flush()
                 return true
             } else {
