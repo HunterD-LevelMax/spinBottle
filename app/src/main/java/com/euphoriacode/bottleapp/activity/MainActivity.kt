@@ -18,16 +18,9 @@ class MainActivity : CustomActivity() {
 
     private fun setupClickListeners() {
         with(binding) {
+
             buttonGame.setOnClickListener {
                 replaceActivity(BottleActivity())
-            }
-
-            buttonAbout.setOnClickListener {
-                if (getInternetStatus(this@MainActivity)) {
-                    replaceActivity(WebActivity(), URL_ABOUT)
-                } else {
-                    showToast(getString(R.string.internet_status_message))
-                }
             }
 
             buttonSettings.setOnClickListener {

@@ -2,7 +2,6 @@ package com.euphoriacode.bottleapp.activity
 
 import android.os.Bundle
 import com.euphoriacode.bottleapp.*
-import com.euphoriacode.bottleapp.adapter.Image
 import com.euphoriacode.bottleapp.customclass.*
 import com.euphoriacode.bottleapp.databinding.ActivityGameBinding
 

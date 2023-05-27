@@ -3,4 +3,6 @@
     <string name="internet_status_message">Проверьте подключение к интернету и перезапустите приложение</string>
     <string name="game_button">Кнопка игры</string>
     <string name="bottle">Бутылочка</string>
+    <string name="other_bottles">Другие бутылочки</string>
+    <string name="about">О нас</string>
 </resources>

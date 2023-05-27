@@ -1,7 +1,7 @@
 package com.euphoriacode.bottleapp.activity
 
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.euphoriacode.bottleapp.*
 import com.euphoriacode.bottleapp.adapter.Image
@@ -23,7 +23,7 @@ class SettingsActivity : CustomActivity(), ImageAdapter.ImageActionListener {
         adapter.imageActionListener = this
 
         recyclerView = binding.recyclerView
-        recyclerView.layoutManager = LinearLayoutManager(this@SettingsActivity)
+        recyclerView.layoutManager = GridLayoutManager(this@SettingsActivity, 2)
         recyclerView.adapter = adapter
     }
 
@@ -33,15 +33,11 @@ class SettingsActivity : CustomActivity(), ImageAdapter.ImageActionListener {
             R.drawable.asset_2,
             R.drawable.asset_3,
             R.drawable.asset_4,
-            R.drawable.asset_5
+            R.drawable.asset_5,
+            R.drawable.asset_6
         )
 
-        val imageList = ArrayList<Image>()
-
-        for (element in images) {
-            imageList.add(Image(element))
-        }
-        return imageList
+        return ArrayList(images.map { Image(it) })
     }
 
     override fun onImageClicked(imageId: Int) {
