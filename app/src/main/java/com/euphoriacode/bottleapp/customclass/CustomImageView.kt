@@ -29,7 +29,7 @@ class CustomImageView @JvmOverloads constructor(
     }
     private fun rotateBottle() {
         val fromDegree =
-            previousRotation % 360.0f // убедимся, что начальный угол не превышает 360 градусов
+            previousRotation % 360.0f
         val fullRotations = Random.nextInt(5, 12) // количество полных оборотов
         val toDegree =
             fullRotations * 360.0f + Random.nextFloat() * 360.0f // случайный угол в пределах 360 градусов

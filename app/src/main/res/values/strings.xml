@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BottleApp</string>
+    <string name="app_name">Бутылочка!</string>
     <string name="internet_status_message">Проверьте подключение к интернету и перезапустите приложение</string>
     <string name="game_button">Кнопка игры</string>
     <string name="bottle">Бутылочка</string>

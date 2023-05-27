@@ -1,11 +1,9 @@
 package com.euphoriacode.bottleapp.activity
 
 import android.os.Bundle
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.*
 import com.euphoriacode.bottleapp.*
-import com.euphoriacode.bottleapp.adapter.Image
-import com.euphoriacode.bottleapp.adapter.ImageAdapter
+import com.euphoriacode.bottleapp.adapter.*
 import com.euphoriacode.bottleapp.customclass.CustomActivity
 import com.euphoriacode.bottleapp.databinding.ActivitySettingsBinding
 
@@ -36,7 +34,6 @@ class SettingsActivity : CustomActivity(), ImageAdapter.ImageActionListener {
             R.drawable.asset_5,
             R.drawable.asset_6
         )
-
         return ArrayList(images.map { Image(it) })
     }
 
