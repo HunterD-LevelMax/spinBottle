@@ -25,7 +25,7 @@
 
         <com.euphoriacode.bottleapp.customclass.CustomImageView
             android:id="@+id/button_game"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:contentDescription="@string/game_button"
@@ -39,12 +39,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.2"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeTextType="uniform"
             android:gravity="center"
             android:text="@string/other_bottles"
-            android:textStyle="bold"
-            android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="8sp"
-            android:autoSizeMaxTextSize="24sp" />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
