@@ -1,5 +1,5 @@
 package com.euphoriacode.bottleapp.adapter
 
-data class Image(
+data class BottleImage(
     val id: Int
 )

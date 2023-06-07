@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.euphoriacode.bottleapp.databinding.ImageItemBinding
 
-class ImageAdapter(private val data: ArrayList<Image>) :
+class ImageAdapter(private val data: ArrayList<BottleImage>) :
     RecyclerView.Adapter<ImageAdapter.ImageViewHolder>(), View.OnClickListener {
 
     var imageActionListener: ImageActionListener? = null
@@ -37,9 +37,9 @@ class ImageAdapter(private val data: ArrayList<Image>) :
     }
 
     override fun onClick(view: View?) {
-        val image: Image? = view?.tag as? Image
-        image?.let {
-            val position = data.indexOfFirst { it.id == image.id }
+        val bottleImage: BottleImage? = view?.tag as? BottleImage
+        bottleImage?.let {
+            val position = data.indexOfFirst { it.id == bottleImage.id }
             val selectedImageId = data[position].id
             imageActionListener?.onImageClicked(selectedImageId)
         }

@@ -9,8 +9,6 @@ import android.net.NetworkCapabilities
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-const val URL_ABOUT = "www.google.com"
-
 @SuppressLint("UseCompatLoadingForDrawables")
 
 var id = R.drawable.asset_1

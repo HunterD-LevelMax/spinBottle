@@ -25,7 +25,7 @@ class SettingsActivity : CustomActivity(), ImageAdapter.ImageActionListener {
         recyclerView.adapter = adapter
     }
 
-    private fun setData(): ArrayList<Image> {
+    private fun setData(): ArrayList<BottleImage> {
         val images = arrayOf(
             R.drawable.asset_1,
             R.drawable.asset_2,
@@ -34,7 +34,7 @@ class SettingsActivity : CustomActivity(), ImageAdapter.ImageActionListener {
             R.drawable.asset_5,
             R.drawable.asset_6
         )
-        return ArrayList(images.map { Image(it) })
+        return ArrayList(images.map { BottleImage(it) })
     }
 
     override fun onImageClicked(imageId: Int) {
