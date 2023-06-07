@@ -5,6 +5,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 
 open class CustomActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        window.setFlags(

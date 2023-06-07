@@ -14,11 +14,11 @@ class BottleActivity : CustomActivity() {
         binding = ActivityGameBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        bottle = binding.bottleImage
         loadId()
     }
 
     private fun loadId() {
+        bottle = binding.bottleImage
         bottle.setImageResource(id)
     }
 }
