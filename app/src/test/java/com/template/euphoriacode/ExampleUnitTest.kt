@@ -1,4 +1,4 @@
-package com.template.sample
+package com.template.euphoriacode
 
 import org.junit.Test
 
